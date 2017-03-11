@@ -1,0 +1,23 @@
+---
+title: "README"
+author: "Philippe Lachapelle"
+date: "11 mars 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Course Project - Getting and Cleaning Data
+# This file highlights the main steps I have taken to create, hopefully, a tidy data set!
+- Import the unzip file in my environment and unzip it
+- Load both the training and testing data sets and then merge them into a unique data frame
+- Load the file containing the features names and assign these names as the column names of the merged data frame
+- Extract only the measurements on the mean and standard deviation for each measurement 
+- Load the activity labels for the training and testing sets and merge them
+- Load the activity labels description reference table
+- Assign a the corresponding descriptive activity names to each activity label and then bind this column to the principal dataset
+- Load the data that identifies the subject who performed the activity for the training and testing sets and then bind this column to the principal data set
+- Create a second, independent tidy data set with the average of each variable for each activity and each subject.
+- Create a txt file with the final df and hoping for the best:)
